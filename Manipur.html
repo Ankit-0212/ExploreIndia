@@ -1,42 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="webpagestyle.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Manipur</title>
 </head>
 <header class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a>
-    </span>
     <nav>
-        <a id="nav-item" href="./About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
 <body>
     <div>
         <img class="image" src="./Manipur.jpg">
+        <h2>Manipur</h2>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
-        </p>
+            Nestled in the slopes of the south-flowing sub-Himalayan ranges in the northeast of India, Manipur is a beautiful land where mother nature is extra generous in her bounty. The state boasts of picturesque landscapes with misty hills, gleaming lakes, lush green valleys, splashing rivers and carpeted with dense forests. Not just this, Manipur is also renowned for its graceful classical dance tradition and rich art and culture which could be clearly seen in its exquisite handicrafts and intricate art forms. Manipur being lesser explored land promises to be one of the best tourist destinations in India offering endless enjoyment and pleasure with its blue lakes, and undulating hills. It is the beautiful, calm and serene, ecstatic simplicity along with the moderate climate that makes Manipur a must visit place in Northeast India.<br><br>
+
+            Capital: Imphal <br><br>
+            
+            Top places to visit in Manipur: -<br><br>
+            Imphal<br>
+            Bishnupur<br>
+            Ukhrul<br>
+            Senapati<br>
+            Thoubal<br>
+            Chandel<br>
+            
+            
+            Churchandrapur<br>
+             
+            Tamenglong<br><br>
+            Top recreational activities to explore in Manipur: -<br><br>
+            
+            Imphal war cemetry<br>
+             
+            Sekta archaelogical living museum<br>
+             
+            Loktak lake<br>
+             
+            Sadu chitru waterfall<br>
+             
+            Makhel cave<br><br>
+            
+            </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>
 
     <div id="contact" class="bottom">
         <ul>
-            <li class="facebook"><a href="https://www.facebook.com/ankitraj.srivastava.710/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-            <li class="instagram"><a href="https://www.instagram.com/awesome_ars/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-            <li class="github"><a href="https://github.com/Ankit-0212"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-            <li class="linkedin"><a href="https://www.linkedin.com/in/ankit-raj-srivastava-1a93241a0"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/ankitraj.srivastava.710/"><i
+                        class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/awesome_ars/"><i class="fa fa-instagram fa-2x"
+                        aria-hidden="true"></i></a></li>
+            <li class="github"><a href="https://github.com/Ankit-0212"><i class="fa fa-github fa-2x"
+                        aria-hidden="true"></i></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/ankit-raj-srivastava-1a93241a0"><i
+                        class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
             <p id="bottom-text">Designed by :- Ankit Raj Srivastava</p>
         </ul>
     </div>
 </footer>
+
 </html>

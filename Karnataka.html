@@ -9,22 +9,67 @@
     <title>Karnataka</title>
 </head>
 <header class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a>
-    </span>
     <nav>
-        <a id="nav-item" href="./About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
 <body>
     <div>
         <img class="image" src="./Karnatka.jpg" >
+        <h2>KARNATAKA</h2>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
+            Places to visit in Karnataka feature some of the most fascinating attractions ranging from spectacular beaches to rugged mountains to dense forests with rich biodiversity and ancient cities. Here you can find some of the most fascinating ancient monuments, palaces, forts and excavated ruins of ancient civilization. Alongside this there are other attractions in Karnataka such as vibrant cities like Bangalore, Mysore, Mangalore,etc that offer a unique blend of old world charms and modernity.<br><br>
+
+Travellers from around the globe visit popular tourist places in Karnataka such as Hampi, Udupi, Badami, Mysore, Belur etc for its fantastic selection of ancient architecture such as the Hoysala temples and forts. Apart from the historical ruins and architecture, Karnataka also has some of the most intriguing wildlife sanctuaries such as the Bandipur Tiger Reserve and National Park, the Nagarhole National Park, Anshi National Park, Dandeli Wildlife Sanctuary and many more. These sanctuaries offer some of the best wildlife spotting opportunities and safaris. Karnataka truly is a fascinating holiday destination that caters to the whims of every kind of traveller.<br><br>
+
+Capital: - Bangalore<br><br>
+Top places to visit in Karnataka: -<br><br>
+Coorg<br>
+Mysore<br>
+Chikmagalur<br>
+Hampi<br>
+Bangalore<br>
+Udupi<br>
+Murudeshwar<br>
+Gokarna<br>
+Mangalore<br>
+Madurai<br><br>
+
+
+Top recreational activities to explore in Karnataka: -<br><br>
+Nandi Hills<br>
+Coorg<br>
+Ooty<br>
+Mysore Palace<br>
+Belum Caves <br>
+Jog Falls<br><br>
+
+
+
+
         </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>

@@ -9,22 +9,60 @@
     <title>Punjab</title>
 </head>
 <header class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a>
-    </span>
     <nav>
-        <a id="nav-item" href="./About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
 <body>
     <div>
         <img class="image" src="./Punjab.jpg">
+        <h2>
+            PUNJAB
+        </h2>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
-        </p>
+            Visit Punjab, and you will see that the large heartedness of the people is as real as their cuisine. You learn a lesson in universal brotherhood at the Golden Temple, one of the most popular tourist places in Punjab. The eyes well up at Jallianwala Bagh, a top most historical destination, while its palaces and museums reflect its past glory. A travel experience in Punjab encompasses culture, heritage, history and wildlife.<br><br>
+            Capital: Chandigarh<br><br>
+            Top places to visit in Punjab: -<br><br>
+            Amritsar<br>
+            Jalandhar<br>
+            Patiala<br>
+            Ludhiana<br>
+            Pathankot<br>
+            Mohali<br>
+            Bhatinda<br>
+            Kapurthala<br>
+            Chandigarh<br><br>
+            
+            Top recreational activities to explore in Punjab: -<br><br>
+            Golden Temple<br>
+            Jallianwala Bagh<br>
+            Wagah Border<br>
+            Rock Garden<br>
+            Maharaja Ranjit Singh War Museum<br>
+            Qila Mubarak<br><br>
+             </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>

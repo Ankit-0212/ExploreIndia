@@ -1,42 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="webpagestyle.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Orissa</title>
 </head>
 <header class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a>
-    </span>
     <nav>
-        <a id="nav-item" href="./About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
 <body>
     <div>
         <img class="image" src="./Orissa.jpg">
+        <h2>ORISSA</h2>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
+            Odisha- the land of paddy fields and palm-fringed silver beaches, temples, rivers, waterfalls and tribal
+            people, is filled with major attractions such as the temples of Bhubaneshwar and Puri, miles of clean
+            beaches and the magnificent Sun Temple of Konark.<br><br>
+            Odisha, the state with a glorious history, is filled with nature and adventure. Inhabited by tribal people,
+            the not-so-developed state of Odisha must be visited to have the experience of the myriad wonders it has in
+            store for everybody. Also known as the soul of India, Odisha is a place where you can relax on the beaches,
+            visit the famous temples and explore the beauty and bounty of nature and wildlife. You can also find various
+            monuments which gloriously stand to remind you of the history of the land. Odisha's art and culture, fairs
+            and festivals, dances and music are a treat for the tourists who love to see colours and wish to enjoy life
+            to the fullest. Visit the soul state of India and come back with a bag full of memories that will remain
+            etched in your mind for a long time.<br><br>
+            Capital: - Bhubaneshwar<br><br>
+            Top places to visit in Orissa: -<br><br>
+            Puri<br>
+            Bhubaneshwar<br>
+            Konark<br>
+            Cuttack<br>
+            Gopalpur<br>
+            Rourkela<br><br>
+            Top recreational activities to explore in Orissa are: -<br><br>
+
+            Sri Jagannath Puri Temple<br>
+
+            Udayagiri and Khandagiri Caves<br>
+
+            Satkosia Tiger Reserve<br>
+
+            Khandagiri Caves<br>
+
+            Sun Temple, Konark<br>
+
+            Puri Beach<br>
+
+            Simlipal National Park<br>
+
+            Hirakud Dam<br>
+
+            Chilika Lake<br><br>
+
+
         </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>
 
     <div id="contact" class="bottom">
         <ul>
-            <li class="facebook"><a href="https://www.facebook.com/ankitraj.srivastava.710/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-            <li class="instagram"><a href="https://www.instagram.com/awesome_ars/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-            <li class="github"><a href="https://github.com/Ankit-0212"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-            <li class="linkedin"><a href="https://www.linkedin.com/in/ankit-raj-srivastava-1a93241a0"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/ankitraj.srivastava.710/"><i
+                        class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/awesome_ars/"><i class="fa fa-instagram fa-2x"
+                        aria-hidden="true"></i></a></li>
+            <li class="github"><a href="https://github.com/Ankit-0212"><i class="fa fa-github fa-2x"
+                        aria-hidden="true"></i></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/ankit-raj-srivastava-1a93241a0"><i
+                        class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
             <p id="bottom-text">Designed by :- Ankit Raj Srivastava</p>
         </ul>
     </div>
 </footer>
+
 </html>

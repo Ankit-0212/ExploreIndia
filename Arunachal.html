@@ -9,22 +9,67 @@
     <title>Arunachal Pradesh</title>
 </head>
 <header class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a>
-    </span>
     <nav>
-        <a id="nav-item" href="./About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
 <body>
     <div>
         <img class="image" src="./Arunachal.jpg" >
+        <h2>ARUNACHAL PRADESH</h2>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
+            The largest of the Seven Sisters of the North East, Arunachal Pradesh literally means ‘the land of dawn-lit mountains’. This almost virgin land beckons visitors with its verdant valleys, pristine water bodies, rich heritage and ancient monuments.
+            This untouched state in the far East of India attracts visitors not just with its natural beauty, but also promises to take the traveller on a spiritual journey. Away from the maddening buzz of a city, Arunachal Pradesh is the perfect getaway destination for families and youngsters alike. Avid travellers to the North East find themselves drawn back to this state, that traces its origins to the Tibetan people.<br><br>
+            Visit Arunachal Pradesh and discover the hidden gems of one of nature’s last frontiers.
+            Arunachal Pradesh will mesmerize you with its untouched beauty. The mountainous land offers the traveller a range of options to choose from on their journey of discovery. Whether you seek nature, or your interest lies in history; whether you are looking for peace and tranquillity or are of an adventurous bent of mind, Arunachal Pradesh has it all.<br><br>
+            
+            Capital: - Itanagar<br><br>
+            Top places to visit in Arunachal Pradesh: -<br><br>
+            Tawang<br>
+            Bomdila<br>
+            Ziro<br>
+            Itanagar<br>
+            Pasighat<br>
+            Roing<br>
+            Bhalukpong<br>
+            Sela Pass<br>
+            Dirang<br><br>
+            
+            Top recreational activities to explore in Arunachal Pradesh : -<br><br>
+            Ziro Festival of Music<br>
+            water rafting<br>
+            Akashganga Temple<br>
+            Tawang Monastery<br>
+            Dibang Wildlife Sanctuary<br>
+            Eaglenest Wildlife Sanctuary<br>
+            Itanagar Wildlife Sanctuary<br><br>
+            
+            
+            
+            
         </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>

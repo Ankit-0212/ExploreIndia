@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,35 +10,71 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>About</title>
 </head>
-<header  class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a>
-    </span>
+<header class="nav-bar">
     <nav>
-        <a id="nav-item" href="./About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
 <body>
     <div>
         <img class="image" src="./India.jpg" alt="Indian flag">
+        <h2>WELCOME TO EXPLORE INDIA</h2>
+        <p>Hi there,</p>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
+            I am glad you visited my page Explore India; this website is created for people who seek for tourist places
+            to explore in all the states and union territories of India. Each page of the states gives a brief idea
+            about most popular tourist spots and recreational activities which can be explored and top places which can
+            be visited to take the full pleasure of the vast heritage of the state of India.
+            India takes pride in flaunting its unsurpassed heritage. The realm of culture among other form of heritage
+            in India has amplified and grown manifold over the time. The cultural bank overwhelmed with creative aspects
+            like art, music, dance and literature has been offering bonus pride to the country and countrymen.<br><br>
+            With the shifts in ruling powers, India has become the thriving hub of multiple architectural marvels. From
+            the world-famous Taj Mahal to the creative genius Khajuraho temple, the power of architecture taste blended
+            with the Indian culture and landscape has no equal. While most of the architecture is well-documented, there
+            are many relics that exist in all their glory without any recognition. Do visit these place and appreciate
+            the beauty of India.<br><br>
+            Hope you like my page and don’t forget to share your experience on any of my contacts.<br><br>
+
         </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>
 
     <div id="contact" class="bottom">
         <ul>
-            <li class="facebook"><a href="https://www.facebook.com/ankitraj.srivastava.710/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-            <li class="instagram"><a href="https://www.instagram.com/awesome_ars/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-            <li class="github"><a href="https://github.com/Ankit-0212"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-            <li class="linkedin"><a href="https://www.linkedin.com/in/ankit-raj-srivastava-1a93241a0"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/ankitraj.srivastava.710/"><i
+                        class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/awesome_ars/"><i class="fa fa-instagram fa-2x"
+                        aria-hidden="true"></i></a></li>
+            <li class="github"><a href="https://github.com/Ankit-0212"><i class="fa fa-github fa-2x"
+                        aria-hidden="true"></i></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/ankit-raj-srivastava-1a93241a0"><i
+                        class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
             <p id="bottom-text">Designed by :- Ankit Raj Srivastava</p>
         </ul>
     </div>
 </footer>
+
 </html>

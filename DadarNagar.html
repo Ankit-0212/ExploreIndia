@@ -1,42 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="webpagestyle.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>dadar and Nagar Haveli</title>
 </head>
 <header class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a>
-    </span>
     <nav>
-        <a id="nav-item" href="./About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
+</header>
+
 <body>
     <div>
-        <img class="image" src="./DadarNagar.jpg" >
+        <img class="image" src="./DadarNagar.jpg">
+        <h2>DADAR AND NAGAR HAVELI</h2>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
+            A perfect serene and sylvan land, Dadra and Nagar is a tourist destination to spend a perfect vacation with
+            family and friends. The delightful place let the tourists experience nature at its best with lush green
+            forests, massive waterfronts, meandering rivers, a variety of flora and fauna. Besides this, tourists will
+            even get the opportunity to experience fine Portuguese architecture and tribal culture of Silvassa- the
+            capital of Dadra and Nagar Haveli. Being a perfect place for both native and travellers, Dadra and Nagar
+            Haveli beckons a travel experience unlike any other. For tourists planning to visit this amazing holiday
+            destination, the travel guide will let one know what all is to be covered when spending a peaceful and calm
+            vacation in Dadra and Nagar Haveli.<br><br>
+
+            With pristine natural beauty, wildlife, architecture, religious places, Dadra and Nagar Haveli offers
+            travellers a chance to have different experiences that will create memories to cling for a lifetime. The
+            place invites the tourists for an incredible nature retreat, an exciting opportunity of watching lions, get
+            an insight into the rich cultural heritage of the tribals, witness the beautiful architecture of the temples
+            and church, let your children visit a mini zoo to spot colourful birds, mischievous monkeys, amazing pythons
+            and sleepy crocodiles, explore a variety of flora at the gardens, try scrumptious seafood and indulge in
+            shopping. Besides this, there are many other things to do in Dadra and Nagar Haveli that is suitable for the
+            tourists of all kind that will let them get a travel experience like never before.<br><br>
+
+
+            Capital: - Silvassa<br><br>
+
+            Top places to visit in Dadar and Nagar Haveli are: -<br><br>
+            Silvassa<br>
+            Khanvel<br>
+            Surangi<br>
+            Vapi<br>
+            Dudhani<br>
+            Dadra<br>
+            Chanod<br><br>
+
+
+            Top recreational activities to explore in Dadar and Nagar Haveli: -<br><br>
+
+            Dudhni Lake<br>
+            Swaminarayan Temple<br>
+
+            Nakshatra Garden<br>
+
+            Vanganga Lake Garden<br>
+
+            Deer Park<br>
+
+            Silvassa Vasona Lion Safari<br>
+
+            Vanganga Lake<br>
+
+            Silvassa Tribal Museum<br>
+
+            Hirwa Van Gardens<br><br>
+
         </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>
 
     <div id="contact" class="bottom">
         <ul>
-            <li class="facebook"><a href="https://www.facebook.com/ankitraj.srivastava.710/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-            <li class="instagram"><a href="https://www.instagram.com/awesome_ars/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-            <li class="github"><a href="https://github.com/Ankit-0212"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-            <li class="linkedin"><a href="https://www.linkedin.com/in/ankit-raj-srivastava-1a93241a0"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/ankitraj.srivastava.710/"><i
+                        class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/awesome_ars/"><i class="fa fa-instagram fa-2x"
+                        aria-hidden="true"></i></a></li>
+            <li class="github"><a href="https://github.com/Ankit-0212"><i class="fa fa-github fa-2x"
+                        aria-hidden="true"></i></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/ankit-raj-srivastava-1a93241a0"><i
+                        class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
             <p id="bottom-text">Designed by :- Ankit Raj Srivastava</p>
         </ul>
     </div>
 </footer>
+
 </html>

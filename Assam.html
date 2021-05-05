@@ -9,22 +9,69 @@
     <title>Assam</title>
 </head>
 <header class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a>
-    </span>
     <nav>
-        <a id="nav-item" href="./About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
 <body>
     <div>
         <img class="image" src="./Assam1.jpg">
+        <h2>ASSAM</h2>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
+            Assam is very well located along the length of the Brahmaputra valley. It is one of the biggest and definitely the most accessible of the different Northeastern States of India. A cuisine with distinctive flavors and aromas, string of Hindu temples that top the list of attractions, no requirement of permits, a welcoming and hospitable population of the locals, vibrant artistic heritage and a picturesque and artistic site beautified with distinctive dance forms, Assam is visually and culturally a little ahead of the other six sister states. The stereotypical landscape of Assam is a serene canvas of golden and green painted from the surrounding rice fields and the aromatic tea estates that are framed well in the length. Further, the highlands of Meghalaya and Nagaland and the blue mountains of Arunachal Pradesh, complete this splendid scenery. <br> <br> 
+
+            Assam has very well preserved its sovereignty and identity. The mekhola sadar which is a traditional dress for women of Assam and the gamosa which is a white and red scarf that is worn around the neck by the men of the Assam are the visible manifestos of the identity and the regional costume of the state. On the other hand, the flavoured fish tenga, is the regional culinary cuisine here. With all this and more preserved in this small state of India, Assam indeed is a quintessential tourist attraction.  <br> <br> 
+            Capital: - Dispur<br> <br> 
+            
+            Top places to visit in Assam: -<br> <br> 
+            Guwahati<br> 
+            Dibrugarh<br> 
+            Jorhat<br> 
+            Jorhat<br> 
+            Tezpur<br> 
+            
+            Karimganj<br> 
+            Dispur<br> 
+            
+            Digboi<br> 
+            Sivasagar<br> 
+            
+            Silchar<br> <br> 
+            
+            Top Recreational activities to explore in Assam: -<br> <br> 
+            Kaziranga National Park<br> 
+            Manas National Park<br> 
+            Kamakhya Temple<br> 
+            Majuli Island<br> 
+            Kakochang Waterfalls<br> 
+            Haflong Lake<br> 
+            Guwahati Planetarium<br> 
+            Umananda Island<br> <br> 
+            
+            
         </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>

@@ -9,22 +9,65 @@
     <title>Jammu and Kashmir</title>
 </head>
 <header class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a><
-    </span>
     <nav>
-        <a id="nav-item" href="./About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
 <body>
     <div>
         <img class="image" src="./JK.jpg">
+        <h2>JAMMU AND KASHMIR</h2>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
+            Jammu is the southernmost-part of the union territory of Jammu and Kashmir which sits proudly on the magnificent Shivalik mountain ranges. The Winter Capital of Kashmir, Jammu is a holy and peaceful city known for its majestic temples, religious shrines, glittering "shikhars", and cultural heritage. Nestled against the backdrop of the snow-capped Pir Panjal Mountains, Jammu forms part of the transition between the Himalayan range in the north and the dusty plains of Punjab in the south. The Shivalik hills cut across the area from the east to the west while the rivers Ravi, Tawi and Chenab cut their way through the region. <br><br>
+
+            The City of Temples, Jammu houses the famous Maha Kali Temple which is considered second only to the Vaishno Devi Temple. Originally found in 14th Century BC, the area was ruled over by Dogra dynasty in the pre-independence era. Buddhist Stupas dating back to the 2nd century AD is peppered throughout Jammu, speaking volumes of its rich heritage.<br><br>
+            Capital: - Summer-Srinagar<br>
+                       Wrinter-Jammu<br>
+            Top places to visit in Jammu and Kashmir: -<br><br>
+            Srinagar<br>
+            Gulmarg<br>
+            Gurez valley<br>
+            Vaishno Devi<br>
+            Patni top<br>
+            Kargil<br>
+            Rajouri<br>
+            Amarnath<br><br>
+            Top recreational activities in Jammu and Kashmir: -<br><br>
+            Shikara Riding: Dal Lake<br>
+            Trekking in Kashmir<br>
+            Himalayas<br>
+            Skiing<br>
+            Paragliding<br>
+            River Rafting<br>
+            
+            Vaishno devi temple<br>
+            Indira Gandhi Memorial Tulip Garden<br>
+            Amarnath Cave<br><br>
+            
+            
         </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>

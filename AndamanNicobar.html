@@ -1,43 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="webpagestyle.css">
-    
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Andaman And Nicobar Islands</title>
 </head>
 <header class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a>
-    </span>
     <nav>
-        <a id="nav-item" href=".About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
 <body>
     <div>
         <img class="image" src="./Andamannicobar.jpg">
+        <h2>ANDAMAN AND NICOBAR ISLANDS</h2>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
+            Andaman and Nicobar Islands featuring palm-fringed beaches with spotless stretches of white sands, an
+            uninterrupted presence of peace, and crystal-clear turquoise waters all around - Andaman is a true example
+            of what you call 'Tropical Paradise’. It is in Bay of Bengal and consists of a large group of 300 islands.
+            Andaman and Nicobar Islands are a great tourist spot for people who seek refreshment around marine life. If
+            you are stuck with a boring routine and a dull life, a visit to Andaman will definitely cheer you up by
+            adding some vibrant shades to your palate. Being in Andaman feels like being in a different world that is
+            far, far away from the world that lacks peace and purity. This piece of heaven in Asia is serene and
+            untouched – a perfect destination for a refreshing holiday that offers a refuge from tiresome
+            responsibilities of the urban world. Spending some days here is a great way to let your heart heal, to let
+            your body relax, and to let your soul revive the lost strength.<br><br>
+
+            Capital: - Port Blair<br><br>
+            Top tourist spots to visit here are: -<br><br>
+            Swaraj Deep<br>
+            Andaman Islands<br>
+            Port Blair<br>
+            Neill Islands<br>
+            Little Andaman<br>
+            Lamiya Bay<br>
+            <br><br>
+            Top Recreational activities to explore:-<br><br>
+
+            Scuba Diving<br>
+            Snorkeling<br>
+            Mangrove Kayaking at Mayabunder<br>
+            Tour the Volcano in Barren Island<br>
+            Light & Sound Show at Cellular Jail<br>
+            Island Trekking<br>
+            Parasailing<br>
+            Dolphin Watching<br>
+            Glass Bottom Boating<br>
+            Visit Forest Museum<br>
+            Anthropological Museum<br>
+            Explore Mahatma Gandhi Marine National Park<br>
+            Explore Limestone Caves<br>
+            <br>
+
         </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>
 
     <div id="contact" class="bottom">
         <ul>
-            <li class="facebook"><a href="https://www.facebook.com/ankitraj.srivastava.710/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-            <li class="instagram"><a href="https://www.instagram.com/awesome_ars/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-            <li class="github"><a href="https://github.com/Ankit-0212"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-            <li class="linkedin"><a href="https://www.linkedin.com/in/ankit-raj-srivastava-1a93241a0"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/ankitraj.srivastava.710/"><i
+                        class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/awesome_ars/"><i class="fa fa-instagram fa-2x"
+                        aria-hidden="true"></i></a></li>
+            <li class="github"><a href="https://github.com/Ankit-0212"><i class="fa fa-github fa-2x"
+                        aria-hidden="true"></i></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/ankit-raj-srivastava-1a93241a0"><i
+                        class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
             <p id="bottom-text">Designed by :- Ankit Raj Srivastava</p>
         </ul>
     </div>
 </footer>
+
 </html>

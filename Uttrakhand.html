@@ -9,22 +9,58 @@
     <title>Uttrakhand</title>
 </head>
 <header class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a>
-    </span>
     <nav>
-        <a id="nav-item" href="./About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
 <body>
     <div>
         <img class="image" src="./Uttrakhand.jpg">
+        <h2>UTTARAKHAND</h2>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
-        </p>
+            Draped in green and guarded by a wall of Himalayas, it isn’t a surprise to know that Uttarakhand is fondly referred to as the ‘Land of Gods’. The diverse and bountiful state that is now a popular tourist destination was brought to fame by the Beatles’ 1968 visit. People around the country have travelled far and wide for the much feted Ganga Aarti – a spiritual gathering around the sacred Ganges River. 
+            The state’s lush Jim Corbett National Park also attracts thousands of visitors on a daily basis for a glimpse of the regal Bengal Tiger and other native wildlife thriving within its thick verdure. Uttarakhand takes you on a mythical, almost magical kind of a journey that promises you spectrums of travel you’ve never experienced before. There is inherent beauty etched within Uttarakhand’s sprawling landscapes, meandering rivers and the magnanimous Himalayas. Every season here exhibits an artistic play of colors, as though Uttarakhand is God’s own canvas.<br><br>
+            Top places to explore in Uttarakhand: -<br><br>
+            Almora<br>
+            Rishikesh<br>
+            Mussoorie<br>
+            Dehradun<br>
+            Nainital<br>
+            Haridwar<br><br>
+            Top recreational activities to explore in Uttarakhand :- <br><br>
+            Nainital Lake <br>
+            Ganga Aarti at Haridwar <br>
+            Lakshman Jhoola<br>
+            Bhimtal lake<br>
+            Kedarnath temple<br>
+            Jim Corbett National Park<br>
+            Gangotri temple<br>
+            Badrinath<br>
+            Prayag<br><br>
+            
+                </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>

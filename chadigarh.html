@@ -9,22 +9,60 @@
     <title>Chandigarh</title>
 </head>
 <header class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a>
-    </span>
     <nav>
-        <a id="nav-item" href="./About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
 <body>
     <div>
         <img class="image" src="./chandigarh.jpg">
+        <h2>CHANDIGARH</h2>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
-        </p>
+            Acclaimed to be the first planned city of India, Chandigarh is renowned for its urban design and architecture. Due to its pleasantness, the place successfully wins the hearts of all the generations. Being a hub of several activities, Chandigarh offers a number of sightseeing places and tourist attractions that are suitable for travellers of all kind. Right from nature to art and culture, from nightlife to shopping, the popular tourism destination assures you the best holiday experience. A visit to Chandigarh is sure to flatter one with its ambience and vibrant culture of both traditional Punjab as well as modernity. For tourists planning to visit Chandigarh anytime soon, the travel guide will let one know what all is to be covered when holidaying in the ‘city beautiful.’<br><br>
+            Top places and recreational activities  to explore in Chandigarh: - <br><br>
+            Shanti Kunj<br>
+            
+            Rose Garden<br>
+             
+            Rock Garden<br>
+             
+            Pinjore Gardens<br>
+             
+            Sukhna Lake<br>
+             
+            Terraced Garden<br>
+             
+            
+            Le Corbusier Centre<br>
+            Thunder Zone <br>
+            ISKCON Chandigarh<br>
+            
+             
+            Nangal Wetlands<br><br>
+            
+              </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>

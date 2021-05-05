@@ -1,8 +1,10 @@
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+
 header{
     width: 100%;
     height: 70px;
@@ -13,22 +15,74 @@ header{
     padding-left: 5px;
     color: white;
 }
+
+
+.nav-bar{
+    position: sticky;
+    top: 0;
+}
+
+
+
+.nav-item{
+    float: right;
+    text-decoration: none;
+    color: white;
+    line-height: 36px;
+    padding-top: 5px;
+    padding-right: 20px;
+    font-size: 25px;
+}
+.menu-item{
+    list-style: none;
+}
+
+
+.nav-item:hover{
+    text-decoration: underline;
+    text-shadow: 0 2px 10px rgb(255, 255, 255);
+    
+}
+
+
+
 h1{
     position:absolute;
     color: white;
     float:left;
     margin-left: 2%;
 }
+h2{
+    font-size: 35px;
+    text-align: center;
+    padding: 2%;
+}
+
+
+
+
+h1:hover{
+    text-shadow: 0 2px 10px rgba(255, 255, 255,1);
+    transition: 0.25s;
+}
+
+
+p{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 30px;
+    line-height: 1.5;
+    margin-left: 16%;
+}
+
 body{
     background-color: floralwhite;
     background-image: url(./background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-h1:hover{
-    text-shadow: 0 2px 10px rgba(255, 255, 255,1);
-    transition: 0.25s;
-}
+
+
 
 .image{
     width: 100%;
@@ -37,32 +91,45 @@ h1:hover{
     padding-top: 0;
     padding-bottom: 0;
 }
+
+
+
 .text-wrap{
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
     font-size: 30px;
     line-height: 1.5;
+    margin-left: 15%;
+    margin-right: 15%;
 }
+
+
+
+
 .bottom {
     background-color: black;
     text-align: left;
     color: white;
-    height: 160px;
+    height: 15%;
     font-size: 20px;
     padding:10px;
+    position: relative;
+    bottom: 0;
     
 }
-.nav-bar{
-    position: sticky;
-    top: 0;
-}
+
+
+
 .bottom ul{
     list-style: none;
     text-align: center;
     position: relative;
     top: 20%;
 }
+
+
+
 .bottom ul li{
     width: 75px;
     height: 75px;
@@ -78,84 +145,115 @@ h1:hover{
 
 }
 
+
+
 .bottom ul li .fa {
     color: #D8E2DC;
     margin-top: 20px;
     transition: all 0.5s ease;
-          }
+}
+
+
+
 .bottom ul li:hover.facebook {
     /* border: none solid #3b5998;
     box-shadow: 0 0 15px #3b5998; */
     transition: all 0.5s ease;
 }
+
+
+
 .bottom ul li:hover .fa-facebook {
     color: #3b5998;
     text-shadow: 0 0 15px #3b5998;
     transition: all 0.5s ease;
 }
+
+
+
 .bottom ul li:hover.instagram {
     /* border: none solid rgb(255, 50, 176);
     box-shadow: 0 0 15px rgb(255, 50, 176); */
     transition: all 0.5s ease;
 }
 
+
+
 .bottom ul li:hover .fa-instagram {
     color: rgb(255, 50, 176);
     text-shadow: 0 0 15px rgb(255, 50, 176);
     transition: all 0.5s ease;
 }
+
+
+
 .bottom ul li:hover.github {
-    /* border: none solid rgb(8, 230, 8); */
-    /* box-shadow: 0 0 15px rgb(8, 230, 8); */
     transition: all 0.5s ease;
 }
+
+
+
 
 .bottom ul li:hover .fa-github {
     color:rgb(0, 185, 0);
     text-shadow: 0 0 15px rgb(8, 230, 8);
     transition: all 0.5s ease;
 }
+
+
+
+
 .bottom ul li:hover.linkedin {
     
     transition: all 0.5s ease;
 }
+
+
+
 
 .bottom ul li:hover .fa-linkedin {
     color:blue;
     text-shadow: 0 0 15px blue;
     transition: all 0.5s ease;
 }
+
+
+
+
 #bottom-text{
 
     text-align: right;
     
 }
-#nav-item{
-    float: right;
-    text-decoration: none;
-    color: white;
-    line-height: 36px;
-    padding-top: 5px;
-    padding-right: 20px;
-    font-size: 25px;
-}
-#nav-item:hover{
-    text-decoration: underline;
-    text-shadow: 0 2px 10px rgb(255, 255, 255);
-    
-}
-@media screen and (max-width:768px) {
+
+
+
+
+@media screen and (max-width:1024px) {
     header{
         width: 100%;
         font-size: 70%;
         padding: 0;
         margin: 0;
     }
-   
+    .menu-item{
+        position: fixed;
+        top:5%;
+        right: 0;
+        height: 100vh;
+        width: 50vw;
+        max-height: 100vh;
+        background-color: black;
         
-    #nav-item{
-        font-size: 100%;
-        padding: 4px; 
+    }
+    #toplogo{
+        font-size: 150%;
+    }
+        
+    .nav-item{
+        font-size: 150%;
+        padding-left:40% ; 
+        width: 100%;   
     }
     .image{
         height:57vh;
@@ -167,6 +265,16 @@ h1:hover{
     }
     #top-wallimage{
         height:69vh;
+    }
+    p{
+        text-align: left;
+        padding: 0;
+        margin: 2%;
+    }
+    .text-wrap{
+        text-align: left;
+        padding: 0;
+        margin: 2%;
     }
     
     
@@ -183,5 +291,28 @@ h1:hover{
     h1{
         position: relative;
         top: 11%;
+        margin-top: 1%
     }
+    .menu-item{
+		display: none;
+	}
+	.menu-item.hamburger{
+		display: block;
+        
+	}
+    .hamIcon{
+        float:right;
+        padding-right: 1.8%;
+        font-size: 120%;
+    }
+}
+@media (min-width: 1025px){
+	.menu-item{
+		display: initial;
+	}
+
+	#toggle-bar{
+		display: none;
+	}
+
 }

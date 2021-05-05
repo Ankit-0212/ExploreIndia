@@ -9,22 +9,55 @@
     <title>Laddakh</title>
 </head>
 <header class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a>
-    </span>
     <nav>
-        <a id="nav-item" href="./About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
 <body>
     <div>
         <img class="image" src="./Laddakh.jpg">
+        <h2>LADAKH</h2>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
-        </p>
+            Ladakh, or La-dvags as it is known in Tibetan, is the ‘land of high passes’ and that has always been its biggest draw for tourists. A land known for its monasteries, its mountain peaks, its adventure and thrills, it calls out to the adrenaline seeker within us, and becomes a destination that deserves a pilgrimage of sorts at least once in a lifetime. Come summer or winter, Ladakh tourism is a magnet all year round. Give heed to its untouched beauty and fulfil your call to the pristine land with your visit to these majestic heights.<br><br>
+            Capital: - Leh and Kargil<br><br>
+            Top places to visit in Ladakh: -<br><br>
+            Leh <br>
+            Kargil<br>
+            Nubra valley<br>
+            Zanskar<br>
+            Drass<br><br>
+            Top recreational activities to explore in Ladakh: -<br><br>
+            Trekking<br>
+            Biking<br>
+            Pangong lake<br>
+            Horse riding<br>
+            River rafting<br>
+            Kargil war memorial<br>
+            Thiksey Monastery<br><br>
+            
+            </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>

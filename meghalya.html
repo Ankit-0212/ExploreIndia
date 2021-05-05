@@ -1,42 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="webpagestyle.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Meghalya</title>
 </head>
 <header class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a>
-    </span>
     <nav>
-        <a id="nav-item" href="./About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
 <body>
     <div>
-        <img class="image" src="./Meghalya.jpg" >
+        <img class="image" src="./Meghalya.jpg">
+        <h2>
+            MEGHALAYA
+        </h2>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
+            Meghalaya, meaning the “abode of clouds” is a paradise for nature lovers. A hill station that is home to a beautiful, mesmerizing sky in a true sense has captivated the minds of tourists all across the globe. It is perfectly nestled in the northeast of India in the Himalayas. The erstwhile state of Assam spread over an area of 22, 429 square kilometers, and lies between 20.1° N and 26.5° N latitude and 85.49 °E and 92.52 °E longitudes. It is bordered to Assam to the north and east and meets Bangladesh to its south and east side. The state filled with huge hills, valleys, numerous lakes, captivating waterfalls, pitch dark caves, and sacred forests; there is no dearth of tourist places in Meghalaya. You can expect panoramic views, foggy hills, terraced slopes, cascading waterfalls, and serpentine rivers mesmerizing your soul. <br><br>
+            Capital: -Shillong<br><br>
+            Top places to visit in Meghalaya: -<br><br>
+            Shillong<br>
+            Sohra<br>
+            Jowai<br>
+            Tura<br>
+            
+            Cherrapunji<br>
+            
+            Mawsyrnam<br><br>
+            Top recreational activities to explore in Meghalaya: -<br><br>
+            Trek To Bewildering Living Root Bridges<br>
+            Camping Around Umiam Lake<br>
+            Explore Mawsmai Cave<br>
+            Water Sports At Umiam Lake<br>
+            Walking Along The David Scott Trail<br>
+            Expedition At Siju Cave<br>
+            Trekking At Laitlum Canyon<br>
+            Don Bosco Museum<br>
+            Churches Of Shillong<br>
+            Explore The Mawlynnong Village<br>
+            Visit The Dawki River<br>
+            Mountain Biking <br><br>
+            
+            
         </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>
 
     <div id="contact" class="bottom">
         <ul>
-            <li class="facebook"><a href="https://www.facebook.com/ankitraj.srivastava.710/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-            <li class="instagram"><a href="https://www.instagram.com/awesome_ars/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-            <li class="github"><a href="https://github.com/Ankit-0212"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-            <li class="linkedin"><a href="https://www.linkedin.com/in/ankit-raj-srivastava-1a93241a0"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/ankitraj.srivastava.710/"><i
+                        class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/awesome_ars/"><i class="fa fa-instagram fa-2x"
+                        aria-hidden="true"></i></a></li>
+            <li class="github"><a href="https://github.com/Ankit-0212"><i class="fa fa-github fa-2x"
+                        aria-hidden="true"></i></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/ankit-raj-srivastava-1a93241a0"><i
+                        class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
             <p id="bottom-text">Designed by :- Ankit Raj Srivastava</p>
         </ul>
     </div>
 </footer>
+
 </html>

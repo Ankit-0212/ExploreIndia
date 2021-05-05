@@ -1,42 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="webpagestyle.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Chattishgarh</title>
 </head>
 <header class="nav-bar">
-    <span>
-        <a href="./index.html"> <h1>Explore India</h1></a>
-    </span>
     <nav>
-        <a id="nav-item" href="./About.html">About</a>
-        <a id="nav-item" href="#contact">Contact</a>
-        <a id="nav-item" href="./index.html">Home</a>
+        <a href="./index.html" id="toplogo">
+            <h1>Explore India</h1>
+        </a>
+        <div class="hamIcon">
+            <h1 id="toggle-bar">&#9776;</h1>
+        </div>
+        <ul class="menu-item">
+            <li><a class="nav-item" href="./About.html">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+            <li><a class="nav-item" href="./index.html">Home</a></li>
+        </ul>
     </nav>
 </header>
+
 <body>
     <div>
         <img class="image" src="./Chattishgarh.jpg" alt="Indian flag">
+        <h2>CHHATTISHGARH</h2>
         <p class="text-wrap">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quaerat repellat molestias expedita culpa doloremque eaque provident explicabo asperiores incidunt minus, magnam beatae repudiandae praesentium rem voluptatem. Odit nesciunt ducimus deserunt illo dolorum rerum aliquid?
+            Travelling to Chhattisgarh is like planning a trip to ultimate bliss. The state is blessed generously by
+            nature and you come across examples of that every few miles. Its landscape, which is dominated for the most
+            part by dense forests, is dotted with waterfalls, caves and a rich wildlife. Located in central India, it
+            offers its fair share of adventure, sightseeing and exploration. The state is home to many temples and some
+            towns which trace their origin to historical times, thus fascinating tourists, historians and archaeologists
+            constantly. To escape the sweltering heat during summers, nature has gifted it with several hill stations,
+            each as beautiful as the other. One cannot gain an insight into Chhattisgarh tourism without mentioning its
+            tribal culture, which traces its origins to ancient times. As a tourist, you will be fascinated by the
+            numerous tribes inhabiting this region which are culturally diverse from each other. Some of the most famous
+            of them are Gonds, Abhuj Maria, Bison Horn Maria, Halba and Dhurvaa. Among these, people belonging to the
+            Bison Horn Maria tribe are easily distinguished by their headdress.<br><br>
+
+            There are numerous opportunities for sightseeing, with the famous tourist places being the Tiger’s Point,
+            Tibetan Buddhist Temples, Machhli Point and Mehta Point. It is such a great experience to rush off into
+            these high altitude places and enjoy the beautiful surroundings with the pleasant weather to keep you
+            company.<br><br>
+
+            Capital:- Raipur<br><br>
+
+            Top places to visit in Chhattisgarh: -<br><br>
+            Raipur<br>
+            Bilaspur<br>
+            Bhilai<br>
+            Durg<br>
+            Raigarh<br>
+            Donagarh<br>
+            Korba<br>
+            Dantewada<br><br>
+
+            Top recreational activities to explore in Chhattisgarh: -<br>
+            Chitrakote Waterfalls<br>
+            Indravati National Park<br>
+            Kotamsar Caves<br>
+            Jungle Safari<br>
+            Dalpat Sagar<br>
+            Maikal Hills<br>
+            Bailadila Range<br><br>
+
+
+
+
         </p>
     </div>
+    <script>
+        function toggleMenu() {
+            let getMenu = document.querySelector(".menu-item");
+            getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>
 </body>
 
 <footer>
 
     <div id="contact" class="bottom">
         <ul>
-            <li class="facebook"><a href="https://www.facebook.com/ankitraj.srivastava.710/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-            <li class="instagram"><a href="https://www.instagram.com/awesome_ars/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-            <li class="github"><a href="https://github.com/Ankit-0212"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-            <li class="linkedin"><a href="https://www.linkedin.com/in/ankit-raj-srivastava-1a93241a0"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/ankitraj.srivastava.710/"><i
+                        class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/awesome_ars/"><i class="fa fa-instagram fa-2x"
+                        aria-hidden="true"></i></a></li>
+            <li class="github"><a href="https://github.com/Ankit-0212"><i class="fa fa-github fa-2x"
+                        aria-hidden="true"></i></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/ankit-raj-srivastava-1a93241a0"><i
+                        class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
             <p id="bottom-text">Designed by :- Ankit Raj Srivastava</p>
         </ul>
     </div>
 </footer>
+
 </html>
